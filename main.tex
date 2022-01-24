@@ -1,0 +1,32 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}  % Umlaute
+\usepackage[ngerman]{babel} % Deutsche Schrift u. Rechtschreibprüfung
+\usepackage[a4paper, left=0cm, right=0cm, top=0cm, bottom=0cm]{geometry} % Geometrie des Dokumentes
+\usepackage{graphicx} % Package um Bilder zu laden 
+\usepackage{pdfpages} % Package um PDFs zu laden
+
+% \usepackage{fancyhdr} % Für mehr Kopf- und Fußzeilenoptionen
+% \pagestyle{fancy} % fancy package anwenden
+% \usepackage{lastpage} % Nur für Ref auf letzte Seite
+% \cfoot{Seite~\thepage~von~\pageref{LastPage}~~} % Fußzeile, rechts orientiert
+
+
+\begin{document}
+
+	\includepdfset{pages=-,fitpaper} % set some options
+
+	\includepdf[pages=-]{unterkunft.pdf}
+	\includepdf[pages=-]{unterkunft-fremdwaehrungsgebuehr.pdf}
+	\includepdf[pages=-]{unterkunft-parkplatz.pdf}
+	\includepdf[pages=-]{unterkunft-parkplatz-fremdwaehrungsgebuehr.pdf}
+	\includepdf[pages=-]{uber-beleg-1.pdf}
+	\includepdf[pages=-]{uber-beleg-2.pdf}
+	\includepdf[pages=-]{oeffentliche-verkehrsmittel-november.pdf}
+	\includepdf[pages=-]{oeffentliche-verkehrsmittel-november-fremdwaehrungsgebuehr.pdf}
+	\includepdf[pages=-]{oeffentliche-verkehrsmittel-dezember.pdf}
+	\includepdf[pages=-]{oeffentliche-verkehrsmittel-dezember-fremdwaehrungsgebuehr.pdf}
+
+	\includepdfset{} % put default values back
+
+\end{document}
